@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cipher Encryption/Decryption</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cipher Encryption/Decryption Tool</h1>
+    
+    <label for="text">Text:</label>
+    <textarea id="text" placeholder="Enter text here"></textarea>
+
+    <label for="key">Key:</label>
+    <input type="text" id="key" placeholder="Enter cipher key here">
+    
+    <label for="cipher">Select Cipher:</label>
+    <select id="cipher">
+      <option value="caesar">Caesar Cipher</option>
+      <option value="monoalphabetic">Monoalphabetic Cipher</option>
+      <option value="playfair">Playfair Cipher</option>
+      <!-- <option value="hill">Hill Cipher</option> -->
+      <option value="vigenere">Vigenère Cipher</option>
+      <option value="railfence">Rail Fence Cipher</option>
+      <option value="columnar">Columnar Transposition</option>
+      <option value="double_columnar">Double Columnar Transposition</option>
+      <option value="railfence">Rail Fence Cipher</option>
+    </select>
+
+    <button onclick="encrypt()">Encrypt</button>
+    <button onclick="decrypt()">Decrypt</button>
+
+    <h2>Output:</h2>
+    <textarea id="output" readonly></textarea>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
